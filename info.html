@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Info & Guide - Myme</title>
+    <meta name="description" content="Présentation de Katandu Kabule et guide d'utilisation de l'application Myme">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&family=Caveat:wght@400;700&family=Shadows+Into+Light&family=Gochi+Hand&display=swap" rel="stylesheet">
+    <style>
+        /* Ajustements pour la cohérence avec le reste de l'app */
+        :root {
+            --myme-blue: #0866ff;
+            --myme-green: #29bd49;
+            --bg-card: #ffffff;
+            --text-main: #1c1e21;
+        }
+        body.dark-mode {
+            --bg-card: #242526;
+            --text-main: #e4e6eb;
+            background-color: #18191a;
+            color: var(--text-main);
+
+        }
+        /* Ajoute ceci pour que les titres ne restent pas noirs en mode sombre */
+        body.dark-mode h1, body.dark-mode h3, body.dark-mode p {
+            color: var(--text-main);
+        }
+
+        body.dark-mode .guide-step {
+            border: 1px solid #3e4042;
+        }
+        .guide-step {
+            background: var(--bg-card);
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .step-number {
+            background: var(--myme-green);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .Presentation img {
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        section { margin-bottom: 40px; padding: 0 15px; }
+        h1 { color: var(--myme-blue); border-bottom: 2px solid var(--myme-blue); padding-bottom: 5px; }
+    </style>
+</head>
+<body class="info-page">
+
+   <header style="text-align: center; padding: 20px;">
+       <h1 style="border:none;">Katandu Kabule Exaucé</h1>
+   </header>
+
+   <nav>
+      <div class="table">
+        <ul>
+           <li><a href="ACCEUIL.html" data-lang="return-app">Retour à l'App</a></li>
+           <li><a href="#guide" data-lang="how-used">Comment utiliser Myme</a></li>
+           <li><a href="download.html">Download</a></li>
+        </ul>
+      </div>
+   </nav>
+
+   <article>
+       <section class="Presentation">
+           <h1 data-lang="who-am-i">Qui suis-je ?</h1>
+           <div class="sec" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+                <div class="left">
+                    <img src="me.jpg" alt="Katandu Kabule" height="200" width="200">
+                </div>
+                <div class="right" style="flex: 1; min-width: 250px;">
+                    <p data-lang="Hello-kat">Salut ! Je m'appelle <strong>Katandu Kabule Exaucé</strong>.</p>
+                    <p data-lang="helo-myme">Je suis un jeune développeur passionné par la Tech et l'innovation. J'ai conçu <strong>Myme</strong> en 2025 avec un objectif simple : créer une plateforme de communication fluide, rapide et personnalisable.</p>
+                    <p data-lang="etud-info">En tant qu'apprenti en informatique, ce projet est le fruit de mes recherches en Firebase, JavaScript et Design Mobile.</p>
+                </div>
+           </div>
+       </section>
+
+
+       <section id="guide" class="Guide">
+            <h1 data-lang="instr-use">Mode d'emploi de Myme</h1>
+            <div class="sec">
+
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-lang="first-steps">Premiers pas : Authentification</h3>
+                        <p data-lang="upon">À l'ouverture, connecte-toi avec ton email. Si c'est ta première fois, l'app créera ton profil automatiquement dans notre base de données sécurisée Firebase.</p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-lang="find">Trouver des amis</h3>
+                        <p data-lang="click">Clique sur l'icône <strong>"+"</strong>. Vous aurais 2 champs une pour taper le nom de l'utilisateur voulu et une autre pour son numero.En commencant par le code de son pays ex(+88...). Cliquez sur le bouton verifier il apparait s'il existe sur myme, puis cliquer sur le bouton message.</p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-lang="sending-message">Envoyer des messages & Médias</h3>
+                        <p>Dans une discussion :
+                            <ul>
+                                <li data-lang="text-msg"><strong >Texte :</strong> Tape ton message et appuie sur l'avion en papier.</li>
+                                <li data-lang="img-msg"><strong >Images :</strong> Appuie sur l'icône "photo" à gauche de la barre de saisie pour choisir une photo.</li>
+                                <li data-lang="voc-msg"><strong >Vocaux :</strong> Maintiens le doigt sur l'icône micro pour enregistrer, relâche pour envoyer.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 data-lang="nav_calls">Passer un appel</h3>
+                        <p data-lang="go-call">Rends-toi dans l'onglet <strong>"Appels"</strong>. Tu y trouveras ton historique. Pour appeler quelqu'un, clique sur le bouton flottant bleu en bas à droite, choisis ton contact, et Myme lancera l'appel via ton réseau mobile.</p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 data-lang="sharing-note">Partager des notes (Humeurs)</h3>
+                        <p data-lang="tab-allows">L'onglet <strong>"Note"</strong> te permet de publier une pensée courte (70 caractères max).
+                            <ul>
+                                <li data-lang="visibility"><strong >Visibilité :</strong> Seuls tes <strong>amis</strong> (tes contacts) peuvent voir ta note.</li>
+                                <li data-lang="duration"><strong >Durée :</strong> Ta note est éphémère, elle disparaît automatiquement après 24 heures.</li>
+                                <li data-lang="interaction"><strong>Interactions :</strong> Tes amis peuvent liker ta note ou y répondre directement par message privé.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3 data-lang="style-dark">Style & Mode Sombre</h3>
+                        <p data-lang="access-menu">Accède au menu (les 3 points en haut à droite) pour activer le <strong>Mode Sombre</strong> ou changer le style (taille du texte, arrondis des bulles, fond d'écran). Tes réglages sont sauvegardés localement sur ton téléphone.</p>
+                    </div>
+                </div>
+
+            </div>
+       </section>
+
+       <section class="Competences">
+           <h1 data-lang="my-technical">Mes Compétences Techniques</h1>
+           <div class="sec" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                 <div class="card">
+                     <h3>Frontend</h3>
+                     <p>HTML5 / CSS3 (Intermédiaire)</p>
+                     <p>JavaScript ES6 (Debutant/Firebase)</p>
+                 </div>
+                 <div class="card">
+                     <h3>Backend & DB</h3>
+                     <p>Firebase Firestore (Expert)</p>
+                     <p>Firebase Auth & Storage</p>
+                 </div>
+                 <div class="card">
+                     <h3>Autres</h3>
+                     <p>Python (Intermédiaire)</p>
+                     <p>UI/UX Design Mobile</p>
+                 </div>
+           </div>
+       </section>
+
+       <section class="Recommandation">
+           <h1 data-lang="down">Téléchargement</h1>
+           <div class="sec" style="text-align: center; background: var(--myme-blue); color: white; padding: 20px; border-radius: 20px;">
+               <h2 data-lang="rejoins">Prêt à rejoindre l'aventure 😎😃😍</h2>
+               <p data-lang="download">Téléchargez la dernière version de Myme pour Android.</p>
+               <a href="download.html" class="btn-download" style="display: inline-block; background: white; color: var(--myme-green); padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 10px;">
+                   Installer Myme (APK)
+               </a>
+           </div>
+       </section>
+   </article>
+
+   <footer style="text-align: center; padding: 30px; font-size: 12px; color: var(--gray);">
+       <p data-lang="concu">© 2025 Katandu Kabule Exaucé. Conçu avec passion.</p>
+   </footer>
+
+   <script>
+       // Petit script pour activer le mode sombre si déjà choisi dans l'app
+       if (localStorage.getItem('theme') === 'dark') {
+           document.body.classList.add('dark-mode');
+       }
+       async function applyTranslations() {
+            const currentLang = localStorage.getItem("lang") || "fr";
+            try {
+                const res = await fetch("lang.json");
+                const data = await res.json();
+                const dict = data[currentLang];
+
+                document.querySelectorAll("[data-lang]").forEach(el => {
+                    const key = el.getAttribute("data-lang");
+                    if (dict && dict[key]) {
+                        if (el.tagName === "INPUT") {
+                            el.placeholder = dict[key];
+                        } else {
+                            el.textContent = dict[key];
+                        }
+                    }
+                });
+            } catch (e) {
+                console.error("Erreur chargement langues:", e);
+            }
+       }
+
+       applyTranslations();
+   </script>
+</body>
+</html>
